@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мої улюблені столиці Європи</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+      }
+      header {
+        background: #102a43;
+        color: white;
+      }
+      nav {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .brand {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+      .menu {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .menu a {
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 30px 60px;
+      }
+      .intro {
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+      }
+      .intro h2 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+      .cities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+      }
+      .city-card {
+        background: white;
+        border-radius: 16px;
+        padding: 22px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      }
+      .city-card h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+      .city-card p {
+        line-height: 1.6;
+      }
+      .city-card a {
+        display: inline-block;
+        margin-top: 12px;
+        color: #1d4ed8;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      footer {
+        background: #dbeafe;
+        color: #1f2937;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">Мої улюблені столиці</div>
+        <div class="menu">
+          <a href="index.html">Головна</a>
+          <a href="city-1.html">Брюссель</a>
+          <a href="city-2.html">Рим</a>
+          <a href="city-3.html">Париж</a>
+          <a href="form.html">Форма</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Блог про найкрасивіші столиці Європи</h2>
+        <p>
+          У цьому блозі я розповідаю про три столиці, які мені найбільше запам'яталися:
+          Брюссель, Рим і Париж. Кожне місто має свою унікальну атмосферу, архітектуру,
+          культуру та історію, тому я вирішив поділитися з вами короткою інформацією про них.
+        </p>
+      </section>
+
+      <section class="cities">
+        <article class="city-card">
+          <h3>Брюссель</h3>
+          <p>Столиця Бельгії — місто, відоме своїми красивими площами, готелями, арт-об'єктами та багатою культурою.</p>
+          <a href="city-1.html">Детальніше про Брюссель</a>
+        </article>
+
+        <article class="city-card">
+          <h3>Рим</h3>
+          <p>Столиця Італії — місто історії, стародавніх пам'яток, римських вулиць, чудових страв і прекрасного мистецтва.</p>
+          <a href="city-2.html">Детальніше про Рим</a>
+        </article>
+
+        <article class="city-card">
+          <h3>Париж</h3>
+          <p>Столиця Франції — символ елегантності, мистецтва, музеїв, романтики та знаменитих вулиць і мостів.</p>
+          <a href="city-3.html">Детальніше про Париж</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Студент Михайлів Орест, група КНк41
+    </footer>
+  </body>
+</html>
