@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Acoustic sensor icon">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#e6f7f5"/>
+  <circle cx="64" cy="64" r="34" fill="url(#g1)"/>
+  <circle cx="64" cy="64" r="18" fill="#f8fafc"/>
+  <path d="M64 18v16M64 94v16M18 64h16M94 64h16" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+  <path d="M32 32l14 14M82 82l14 14M32 96l14-14M82 46l14-14" stroke="#f8fafc" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+</svg>

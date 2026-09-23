@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Акустична варта</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <div class="brand">
+          <img src="images/sensor.svg" alt="Іконка датчика шуму" />
+          <div>
+            <h1>Акустична варта</h1>
+            <p class="tagline">Професійний моніторинг шумового забруднення міських територій</p>
+          </div>
+        </div>
+
+        <nav aria-label="Головна навігація">
+          <div class="nav-list">
+            <a href="#intro">Вступ</a>
+            <a href="#monitoring">Моніторинг</a>
+            <a href="#directions">Напрямки</a>
+            <a href="#measurements">Вимірювання</a>
+            <a href="#order">Замовлення</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-grid">
+      <div class="content">
+        <section id="intro">
+          <h2>Вступ</h2>
+          <p class="intro-text">
+            Компанія «Акустична варта» забезпечує повний цикл моніторингу шумового забруднення
+            для житлових комплексів, офісних центрів, промислових підприємств і громадських
+            просторів. Ми допомагаємо визначати джерела надлишкового шуму та формувати
+            практичні рекомендації для покращення умов навколишнього середовища.
+          </p>
+          <p class="intro-text">
+            Завдяки системі тимчасових акустичних датчиків ми збираємо дані в режимі реального
+            часу, аналізуємо параметри та готуємо зрозумілі звіти для наших клієнтів.
+          </p>
+        </section>
+
+        <section id="monitoring" title="monitoring">
+          <h2>Поточний моніторинг</h2>
+          <div class="monitor-grid">
+            <div class="stat-card">
+              <span class="stat-label">Об’єктів під контролем</span>
+              <strong class="stat-value">18</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Середній рівень шуму</span>
+              <strong class="stat-value">58 дБ</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Період моніторингу</span>
+              <strong class="stat-value">7 днів</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="directions">
+          <h2>Напрямки роботи</h2>
+          <div class="direction-grid">
+            <article class="direction-card">
+              <h3>Моніторинг шуму</h3>
+              <p>Фіксація пікових рівнів, оцінка впливу на житлові та робочі зони.</p>
+            </article>
+            <article class="direction-card">
+              <h3>Акустичні вимірювання</h3>
+              <p>Проведення професійних замірів на об’єктах різного типу і призначення.</p>
+            </article>
+            <article class="direction-card">
+              <h3>Підготовка звітів</h3>
+              <p>Формування зрозумілої документації для керівництва, комунальних служб і організаторів заходів.</p>
+            </article>
+            <article class="direction-card">
+              <h3>Консультації</h3>
+              <p>Порадка щодо зменшення шумового навантаження та впровадження заходів захисту.</p>
+            </article>
+          </div>
+        </section>
+
+        <aside class="warning-box" id="warning">
+          <div class="warning-badge" aria-hidden="true"></div>
+          <h3>Попередження</h3>
+          <p>
+            У пік активності вранці та ввечері спостерігається підвищений рівень шуму поблизу
+            транспортних магістралей і районів масових заходів. Рекомендується вжити заходів
+            щодо зниження навантаження на прилеглі території.
+          </p>
+          <ul class="warning-list">
+            <li>Підвищений шум на перехрестях</li>
+            <li>Зростання викидів біля енергетичних об’єктів</li>
+            <li>Безпечний режим роботи для громадських заходів</li>
+          </ul>
+        </aside>
+
+        <section id="measurements">
+          <h2>Останні вимірювання</h2>
+          <div class="table-wrap">
+            <table class="measurements-table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Місце</th>
+                  <th>Рівень</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>23.09.2026</td>
+                  <td>ЖК «Лісова Тераса»</td>
+                  <td>53 дБ</td>
+                  <td><span class="status-tag" data-status="normal">Нормально</span></td>
+                </tr>
+                <tr>
+                  <td>22.09.2026</td>
+                  <td>Офісний центр «Сіті Парк»</td>
+                  <td>61 дБ</td>
+                  <td><span class="status-tag" data-status="warning">Під контролем</span></td>
+                </tr>
+                <tr>
+                  <td>21.09.2026</td>
+                  <td>Міський майдан</td>
+                  <td>68 дБ</td>
+                  <td><span class="status-tag" data-status="alert">Треба реакції</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="order">
+          <h2>Форма замовлення</h2>
+          <form class="order-form">
+            <div>
+              <label for="name">Ім’я</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="object-type">Тип об’єкта</label>
+              <select id="object-type" name="object-type" required>
+                <option value="">Оберіть тип</option>
+                <option value="apartment">Житловий комплекс</option>
+                <option value="office">Офісний центр</option>
+                <option value="enterprise">Підприємство</option>
+                <option value="event">Міський захід</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="period">Період моніторингу</label>
+              <input type="text" id="period" name="period" placeholder="Наприклад: 7 днів" />
+            </div>
+
+            <div>
+              <label for="description">Опис потреби</label>
+              <textarea id="description" name="description" placeholder="Опишіть ваш запит..."></textarea>
+            </div>
+
+            <button type="submit">Замовити дослідження</button>
+          </form>
+        </section>
+      </div>
+
+      <aside class="warning-box">
+        <div class="warning-badge" aria-hidden="true"></div>
+        <h3>Термінові дані</h3>
+        <p>Під час проведення масових заходів вулиця отримує максимальне акустичне навантаження.</p>
+        <ul class="warning-list">
+          <li>Пікові години: 17:00–22:00</li>
+          <li>Рівень шуму: до 72 дБ</li>
+          <li>Необхідна фільтрація</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>Акустична варта</span>
+        <span class="footer-contact">Контакти: info@acousticguard.ua | 2026</span>
+      </div>
+    </footer>
+  </body>
+</html>
