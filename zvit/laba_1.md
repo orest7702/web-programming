@@ -39,7 +39,7 @@
 https://orest7702.github.io/web-programming/1_laba/index.html
 
 
-![Результат лабораторної роботи №1](./images/laba_1.png)
+![Результат лабораторної роботи №1](../images/laba_1.png)
 
 
 ## Висновок

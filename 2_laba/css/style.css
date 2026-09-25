@@ -322,16 +322,6 @@ aside {
   color: #dbeafe;
 }
 
-@media (max-width: 860px) {
-  .page-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .direction-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 [title="monitoring"] {
   color: var(--primary-dark);
 }
