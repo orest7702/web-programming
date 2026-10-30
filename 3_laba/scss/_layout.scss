@@ -1,0 +1,136 @@
+@use "mixins" as mixins;
+@use "variables" as vars;
+
+.container {
+  @include mixins.container;
+}
+
+.site-header {
+  padding: vars.$spacing-section 0;
+  background-color: vars.$color-primary;
+  color: vars.$color-surface;
+}
+
+.header-row {
+  @include mixins.flex-layout(
+    $gap: vars.$spacing-md,
+    $align: flex-start,
+    $justify: space-between,
+    $wrap: wrap,
+    $direction: column
+  );
+}
+
+.brand {
+  @include mixins.flex-layout($gap: vars.$spacing-md);
+  min-width: 0;
+}
+
+.brand > div {
+  min-width: 0;
+}
+
+.brand img {
+  width: vars.$brand-image-size;
+  height: vars.$brand-image-size;
+  padding: vars.$spacing-xs;
+  border-radius: 50%;
+  background-color: vars.$color-surface;
+}
+
+.brand h1 {
+  margin-bottom: 0;
+  font-size: 32px;
+  overflow-wrap: anywhere;
+}
+
+.tagline {
+  margin: vars.$spacing-2xs 0 0;
+  overflow-wrap: anywhere;
+}
+
+.page-grid {
+  @include mixins.flex-layout(
+    $gap: vars.$spacing-layout,
+    $align: flex-start,
+    $direction: column
+  );
+  padding: vars.$spacing-xl 0 vars.$spacing-page-bottom;
+}
+
+.content {
+  @include mixins.flex-layout($gap: vars.$spacing-lg, $align: stretch, $direction: column);
+  width: 100%;
+  min-width: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: vars.$spacing-lg;
+}
+
+.hero h2 {
+  margin: 0 0 vars.$spacing-md;
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
+}
+
+.hero__image img {
+  width: 100%;
+  max-height: vars.$hero-image-max-height;
+  object-fit: cover;
+}
+
+@include mixins.mobile {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-content {
+  @include mixins.flex-layout(
+    $gap: vars.$spacing-lg,
+    $align: flex-start,
+    $direction: column
+  );
+}
+
+.site-footer {
+  padding: vars.$spacing-section 0;
+  background-color: vars.$color-footer-background;
+  color: vars.$color-surface;
+}
+
+@media (min-width: vars.$breakpoint-tablet) {
+  .header-row {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .footer-content {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: vars.$breakpoint-desktop) {
+  .page-grid {
+    flex-direction: row;
+  }
+
+  .content {
+    width: auto;
+    flex: 2;
+  }
+
+  .page-grid > .warning-box {
+    width: auto;
+    flex: 1;
+  }
+}
