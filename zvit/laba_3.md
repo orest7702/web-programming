@@ -28,7 +28,10 @@
 
 ## Результат
 
-...
+https://orest7702.github.io/web-programming/3_laba/index.html
+
+![Результат лабораторної роботи №3](../images/laba_3.png)
+
 
 ## Висновок
 
